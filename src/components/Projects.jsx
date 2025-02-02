@@ -2,7 +2,7 @@ import styles from '../styles/Projects.module.css';
 
 function Projects() {
   const projects = [
-    { title: "Sistema de Gestão", description: "Aplicação desktop desenvolvida em C# para gestão empresarial e análise de dados" },
+    { title: "Sistema de Gestão", description: "Aplicação desktop desenvolvida em C# para gestão empresarial e análise de dados, diretamento ligado ao ERP Winthor" },
     { title: "E-commerce", description: "Loja virtual desenvolvida com React e Node.js" },
     { title: "App de Tarefas", description: "Aplicativo web para gerenciamento de tarefas" }
     

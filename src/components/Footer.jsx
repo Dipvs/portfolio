@@ -6,9 +6,12 @@ function Footer() {
         <div className={styles.container}>
           <p>© 2025 Victor Silva. Todos os direitos reservados.</p>
           <div className={styles['social-links']}>
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
-            <a href="#">Twitter</a>
+          <a href="https://www.linkedin.com/in/victor-silva-8b34212b7/" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+            <a href="https://github.com/Dipvs" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
           </div>
         </div>
       </footer>

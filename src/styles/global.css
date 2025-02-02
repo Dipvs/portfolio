@@ -6,11 +6,13 @@
 }
 
 :root {
-    --primary: #2563eb;
-    --dark: #1e293b;
-    --light: #f8fafc;
-    --gray: #64748b;
+    --primary: #4F46E5; /* Azul vibrante */
+    --dark: #111827; /* Preto azulado sofisticado */
+    --light: #F9FAFB; /* Branco suave */
+    --gray: #6B7280; /* Cinza neutro */
+    --accent: #14B8A6; /* Verde água moderno */
 }
+
 
 body {
     background-color: var(--light);
