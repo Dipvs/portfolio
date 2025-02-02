@@ -2,23 +2,35 @@ import styles from '../styles/Projects.module.css';
 
 function Projects() {
   const projects = [
-    { title: "Sistema de Gestão", description: "Aplicação desktop desenvolvida em C# para gestão empresarial e análise de dados, diretamento ligado ao ERP Winthor" },
-    { title: "E-commerce", description: "Loja virtual desenvolvida com React e Node.js" },
-    { title: "App de Tarefas", description: "Aplicativo web para gerenciamento de tarefas" }
-    
+    { 
+      title: "Sistema de Gestão", 
+      technologies: "C#, ERP Winthor", 
+      description: "Aplicação desktop desenvolvida para otimizar a gestão empresarial, integrando-se diretamente ao ERP Winthor para análise de dados e processos."
+    },
+    { 
+    title: "Exibição de Relatórios", 
+      technologies: "Node.js, React", 
+      description: "Plataforma web que auxilia vendedores no acompanhamento de metas diárias, proporcionando uma interface intuitiva e informações em tempo real."
+    },
+    { 
+      title: "Visualização de Dados", 
+      technologies: "Django, React, Plotly, Dash", 
+      description: "Aplicação web interativa para visualização e análise de dados de vendas, permitindo insights estratégicos por meio de gráficos dinâmicos."
+    }
   ];
 
   return (
-    <section id="projects" className={styles['projects']}>
-      <div className={styles['container']}>
-        <h2 className={styles['section-title']}>Projetos em Destaque</h2>
-        <div className={styles['projects-grid']}>
+    <section id="projects" className={styles.projects}>
+      <div className={styles.container}>
+        <h2 className={styles.sectionTitle}>Projetos em Destaque</h2>
+        <div className={styles.projectsGrid}>
           {projects.map((project, index) => (
-            <div key={index} className={styles['project-card']}>
-              <div className={styles['project-image']}></div>
-              <div className={styles['project-info']}>
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
+            <div key={index} className={styles.projectCard}>
+              <div className={styles.projectImage}></div>
+              <div className={styles.projectInfo}>
+                <h3 className={styles.projectTitle}>{project.title}</h3>
+                <p className={styles.projectTechnologies}><strong>Tecnologias:</strong> {project.technologies}</p>
+                <p className={styles.projectDescription}>{project.description}</p>
               </div>
             </div>
           ))}

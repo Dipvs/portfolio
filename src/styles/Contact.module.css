@@ -1,61 +1,106 @@
-
-
-/* Contact Section */
-.section-title {
+.contactSection {
+    background: linear-gradient(to bottom, #f9fafb, #ffffff);
+    padding: 4rem 1rem;
     text-align: center;
-    margin-bottom: 3rem;
-}
-
-
-.contact {
-    padding: 5rem 0;
-    background-color: white;
-}
-
-.contact-form {
-    max-width: 600px;
+  }
+  
+  .container {
+    max-width: 700px;
     margin: 0 auto;
-    align-items: center;
-}
-
-.form-group {
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
     margin-bottom: 1.5rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid var(--gray);
-    border-radius: 5px;
-}
-
-.button-container {
+    color: #333;
+  }
+  
+  .description {
+    color: #555;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  
+  .buttonContainer {
     display: flex;
-    justify-content: left; /* Centraliza o botão horizontalmente */
-    width: 100%;
-}
-
-.cta-button {
-    padding: 1rem 2rem;
-    background-color: var(--primary);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Garante que fique responsivo */
+  }
+  .ctaButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.875rem 1.5rem;
+    width: 256px;
+    font-size: 1rem;
+    font-weight: 600;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
-    transition: transform 0.3s;
-}
-
-.cta-button:hover {
-    transform: translateY(-3px);
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .ctaButton:hover {
+    transform: translateY(-2px);
+  }
+  
+  .ctaButton svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  
+  /* Botão do WhatsApp */
+  .whatsappButton {
+    background-color: #25D366;
+  }
+  
+  .whatsappButton:hover {
+    background-color: #22c15e;
+    box-shadow: 0 10px 15px -3px rgba(37, 211, 102, 0.2);
+  }
+  
+  /* Botão de Email */
+  .emailButton {
+    background-color: #2563eb;
+  }
+  
+  .emailButton:hover {
+    background-color: #1d4ed8;
+    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.2);
+  }
+  
+  /* Animação da seta */
+  .arrow {
+    width: 16px;
+    height: 16px;
+    opacity: 0;
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  
+  .ctaButton:hover .arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 640px) {
+    .ctaButton {
+      width: 100%;
+      max-width: 256px;
+      margin: 0 auto;
+    }
+  
+    .buttonContainer {
+      flex-direction: column;
+    }
+  }
+  
